@@ -54,11 +54,11 @@ if __name__ == "__main__":
         obj = demjson.decode_file(CodeSettingPath)
         # 
         m = map(SyncLeek.AddPrefix, stocks)
-        # m = list(m)
+        m = list(m)
         # 添加指数
         m.append("sh000001")
         m.append("sz399001")
-        obj["leek-fund.stocks"] = list(m)
+        obj["leek-fund.stocks"] = m
         # print(obj)
         # 格式化输出到str
         s = json.dumps(obj, indent=4)
