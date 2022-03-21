@@ -1,0 +1,1 @@
+python -m nuitka --mingw64 --windows-disable-console --include-package=demjson main.py
